@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Amala Rose Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">MyPortfolio</div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="toggle-btn" onclick="toggleDarkMode()">🌙</button>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="profile-image" id="imageContainer">
+      <img id="previewImage" src="" alt="" />
+      <input type="file" id="imageUpload" accept="image/*" />
+      <label for="imageUpload" class="add-image-btn">Add Image</label>
+    </div>
+    <h1 class="name-heading">Amala Rose Martin</h1>
+    <p class="subheading" id="typing-text"></p>
+  </section>
+
+  <section id="about" class="tile">
+    <h2>About Me</h2>
+    <p>I am passionate about design and technology. I build responsive and attractive websites with a creative touch.</p>
+  </section>
+
+  <section id="skills" class="tile">
+    <h2>Skills</h2>
+    <div class="cards">
+      <div class="card">HTML</div>
+      <div class="card">CSS</div>
+      <div class="card">JavaScript</div>
+      <div class="card">Java</div>
+      <div class="card">UI/UX</div>
+      <div class="card">Python</div>
+    </div>
+  </section>
+
+  <section id="projects" class="tile">
+    <h2>Projects</h2>
+    <div class="carousel">
+      <div class="carousel-track">
+        <div class="card">
+          <h3>Tourist Places Website</h3>
+          <p>A site showing Indian tourist places using HTML/CSS/JS.</p>
+        </div>
+        <div class="card">
+          <h3>To-Do App</h3>
+          <p>A JavaScript-based simple task manager.</p>
+        </div>
+        <div class="card">
+          <h3>Netflix Clone</h3>
+          <p>A modern UI replica of Netflix using HTML/CSS.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="tile">
+    <h2>Contact</h2>
+    <button id="contactBtn">Contact Me</button>
+    <div id="contactForm" class="hidden">
+      <input type="text" placeholder="Your Name" />
+      <input type="email" placeholder="Your Email" />
+      <textarea placeholder="Your Message"></textarea>
+      <button type="submit">Submit</button>
+    </div>
+    <p class="email-text">Email: amala@example.com</p>
+  </section>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Amala Rose. All Rights Reserved.</p>
+  </footer>
+
+  <button id="scrollTop" title="Go to top">⬆️</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
